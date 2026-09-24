@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Happy Birthday, You ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap');
+:root{
+  --cream:#fff8ed; --ink:#302b2a; --brown:#67483b; --rose:#b87573;
+  --sage:#6f806b; --night:#17252b; --gold:#d6a85f;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}
+section{position:relative;overflow:hidden}
+.hero{
+ min-height:100vh; display:flex; align-items:center; justify-content:center;
+ text-align:center; color:#fff; padding:50px 20px;
+ background:
+ radial-gradient(circle at 20% 20%,rgba(255,255,255,.12) 0 1px,transparent 2px),
+ radial-gradient(circle at 80% 30%,rgba(255,255,255,.15) 0 1px,transparent 2px),
+ linear-gradient(180deg,#102128 0%,#203b3e 52%,#745747 100%);
+}
+.hero:before{content:"";position:absolute;inset:0;background:
+ radial-gradient(ellipse at 50% 88%,rgba(255,183,90,.3),transparent 24%),
+ radial-gradient(ellipse at 50% 100%,#e6a45a 0,transparent 16%);opacity:.75}
+.stars{position:absolute;inset:0}
+.star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:.7;animation:twinkle 2.8s infinite}
+@keyframes twinkle{50%{opacity:.18;transform:scale(.55)}}
+.moon{position:absolute;top:10%;right:12%;width:74px;height:74px;border-radius:50%;background:#fff2cf;box-shadow:0 0 45px #ffe5a0}
+.hero-inner{z-index:2;max-width:850px}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:12px;opacity:.8}
+h1,h2,.serif{font-family:'Cormorant Garamond',serif}
+h1{font-size:clamp(64px,12vw,130px);line-height:.78;margin:25px 0 18px;font-weight:500}
+.hero p{font-family:'Cormorant Garamond',serif;font-size:clamp(23px,3vw,32px);margin:0 auto 35px;max-width:650px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;background:#fff;color:var(--brown);text-decoration:none;font-weight:700;cursor:pointer;border:0;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.scroll{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:2px;opacity:.65}
+.intro{padding:100px 22px;text-align:center}
+.intro .wrap{max-width:800px;margin:auto}
+h2{font-size:clamp(42px,6vw,70px);line-height:.95;margin:0 0 20px;font-weight:600}
+.lead{font-family:'Cormorant Garamond',serif;font-size:26px;line-height:1.45}
+.cardrow{max-width:1050px;margin:55px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:30px 24px;background:#fff;border-radius:24px;box-shadow:0 15px 45px rgba(73,48,35,.08);text-align:left}
+.icon{font-size:38px}.card h3{font-family:'Cormorant Garamond';font-size:28px;margin:12px 0 8px}.card p{line-height:1.65;color:#665d59}
+.camp{
+ min-height:720px;padding:100px 22px;color:#fff;text-align:center;
+ background:linear-gradient(180deg,#20383b 0%,#15272d 70%,#111b20 100%);
+}
+.camp .wrap{max-width:900px;margin:auto;position:relative;z-index:2}
+.fire{width:115px;height:115px;margin:45px auto 10px;position:relative}
+.fire:before{content:"";position:absolute;inset:25px 28px 8px;background:#ffb84f;border-radius:60% 40% 60% 40%;transform:rotate(45deg);box-shadow:0 0 45px #ff9b36}
+.fire:after{content:"";position:absolute;inset:43px 42px 12px;background:#fff0b2;border-radius:60% 40% 60% 40%;transform:rotate(45deg)}
+.trees{position:absolute;bottom:-2px;left:0;right:0;height:160px;background:
+ linear-gradient(135deg,transparent 49%,#101b1f 50%) 0 0/110px 130px,
+ linear-gradient(45deg,transparent 49%,#101b1f 50%) 55px 0/110px 130px;
+ opacity:.8}
+.letter{padding:110px 22px;background:#f5eadb}
+.letterbox{max-width:760px;margin:auto;background:#fffdf8;padding:55px clamp(28px,7vw,75px);border-radius:4px;box-shadow:0 18px 60px rgba(64,42,30,.12);transform:rotate(-.4deg)}
+.letterbox p{font-family:'Cormorant Garamond';font-size:24px;line-height:1.55}
+.signature{font-size:28px!important;margin-top:35px}
+.muffin{padding:110px 22px;text-align:center;background:#fff8ed}
+.cat{
+ width:150px;height:125px;margin:25px auto;position:relative;background:#9b765e;
+ border-radius:48% 48% 42% 42%;box-shadow:0 20px 45px rgba(80,50,35,.16)
+}
+.cat:before,.cat:after{content:"";position:absolute;top:-28px;width:58px;height:58px;background:#9b765e}
+.cat:before{left:6px;transform:rotate(30deg);border-radius:15px 40px 0 40px}
+.cat:after{right:6px;transform:rotate(60deg);border-radius:40px 15px 40px 0}
+.eyes{position:absolute;top:45px;left:0;right:0;font-size:20px;letter-spacing:32px;padding-left:17px}
+.nose{position:absolute;top:68px;left:69px}
+.muffin p{max-width:650px;margin:20px auto;font-family:'Cormorant Garamond';font-size:25px;line-height:1.5}
+.reveal{margin-top:25px}
+#secret{display:none;max-width:600px;margin:25px auto 0;padding:25px;border:1px dashed #c9a27d;border-radius:18px;background:#fff}
+.gallery{padding:100px 22px;background:#eadfce;text-align:center}
+.gallerygrid{max-width:1000px;margin:40px auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.photo{min-height:230px;border-radius:22px;padding:25px;display:flex;align-items:flex-end;text-align:left;color:white;overflow:hidden;background:
+linear-gradient(135deg,#8b684e,#3c5148);position:relative}
+.photo:nth-child(2){background:linear-gradient(135deg,#566d64,#a68161)}
+.photo:nth-child(3){background:linear-gradient(135deg,#314c4c,#b37d61)}
+.photo:nth-child(4){background:linear-gradient(135deg,#8b735e,#455e54)}
+.photo span{font-family:'Cormorant Garamond';font-size:30px;position:relative;z-index:2}
+.final{min-height:80vh;padding:100px 22px;display:flex;align-items:center;justify-content:center;text-align:center;background:#fffaf2}
+.final .wrap{max-width:760px}
+.final h2{font-size:clamp(50px,8vw,90px)}
+.bigheart{font-size:70px;animation:beat 1.5s infinite}
+@keyframes beat{50%{transform:scale(1.12)}}
+footer{text-align:center;padding:28px;background:#2c2927;color:#ddd;font-size:12px;letter-spacing:1px}
+.confetti{position:fixed;top:-20px;width:10px;height:16px;z-index:99;pointer-events:none;animation:fall 4s linear forwards;border-radius:2px;box-shadow:0 0 3px rgba(0,0,0,.12)}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:700px){.cardrow,.gallerygrid{grid-template-columns:1fr}.card{padding:25px}.hero{min-height:92vh}}
+</style>
+</head>
+<body>
+<section class="hero" id="top">
+ <div class="stars" id="stars"></div><div class="moon"></div>
+ <div class="hero-inner">
+   <div class="kicker">A tiny universe made just for you</div>
+   <h1>Happy Birthday</h1><br><h2>♡Harsha♡</h2>
+   <p>For the girl who makes ordinary days feel a little more like an adventure.</p>
+   <a class="btn" href="#letter">Come inside →</a>
+ </div>
+ <div class="scroll">SCROLL SLOWLY ↓</div>
+</section>
+
+<section class="intro">
+ <div class="wrap">
+  <div class="kicker" style="color:#9b6a58">Today is yours</div>
+  <h2>One more trip around the sun.</h2>
+  <p class="lead">And if I could choose a place to celebrate you, it would be somewhere under an enormous sky, beside a warm little campfire, with the people and creatures you love close by.</p>
+  <div class="cardrow">
+   <div class="card"><div class="icon">🏕️</div><h3>Wild places</h3><p>For the camping days, quiet trails, fresh air, and all the little adventures waiting to happen.</p></div>
+   <div class="card"><div class="icon">🐾</div><h3>Muffin</h3><p>Because no birthday tribute would be complete without a certain very important little cat.</p></div>
+   <div class="card"><div class="icon">✨</div><h3>New memories</h3><p>Here’s to collecting more ridiculous stories, beautiful sunsets, late-night conversations and happy moments.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="camp">
+ <div class="wrap">
+  <div class="kicker">Tonight's imaginary campsite</div>
+  <h2 style="color:#fff">Somewhere under the stars.</h2>
+  <p class="lead">No notifications. No schedules. Just a tent, a campfire, the sound of the night… and you.</p>
+  <div class="fire"></div>
+  <button class="btn" onclick="makeWish()">Make a birthday wish ✨</button>
+  <div id="wish" style="margin-top:18px;opacity:.8"></div>
+ </div>
+ <div class="trees"></div>
+</section>
+
+<section class="letter" id="letter">
+ <div class="letterbox">
+  <div class="kicker">A letter for you</div>
+  <h2>Hey, birthday girl.</h2>
+  <p>Today, I hope you pause for a moment and realise how wonderfully deserving you are of good things.</p>
+  <p>I hope this next chapter brings you places you've never seen, campfires that last a little longer, skies that make you stop and stare, and a ridiculous number of moments that make you smile without even trying.</p>
+  <p>And when life gets busy, I hope you remember there is someone out here cheering for you, thinking about you, and wanting to see you happy.</p>
+  <p>Happy birthday. You deserve a day that feels as special as you are.</p>
+  <p class="signature">With all my love ♡</p>
+ </div>
+</section>
+
+<section class="muffin">
+ <div class="kicker" style="color:#9b6a58">A very important guest</div>
+ <h2>Muffin's birthday message 🐾</h2>
+ <div class="cat"><div class="eyes">• •</div><div class="nose">♥</div></div>
+ <p>“I have inspected the presents. I have inspected the cake. I have also inspected your lap. Everything is acceptable. Happy birthday, human.”</p>
+ <button class="btn reveal" onclick="document.getElementById('secret').style.display='block';this.style.display='none'">Pet Muffin for a surprise</button>
+ <div id="secret">🐾 <strong>Muffin has a secret:</strong><br><br>He says you're allowed to have an extra slice of birthday cake today. No negotiations.</div>
+</section>
+
+<section class="gallery">
+ <div class="kicker">Your little mood board</div>
+ <h2>Things that feel like you</h2>
+ <div class="gallerygrid">
+  <div class="photo"><span>🌲<br>Camp mornings</span></div>
+  <div class="photo"><span>🌌<br>Midnight skies</span></div>
+  <div class="photo"><span>🔥<br>Long conversations</span></div>
+  <div class="photo"><span>🐈<br>Muffin being Muffin</span></div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap">
+  <div class="bigheart">♡</div>
+  <div class="kicker">One last thing</div>
+  <h2>May this be your happiest chapter yet.</h2>
+  <p class="lead">Happy Birthday, beautiful. Here's to more adventures, more laughter, more sunsets, and a lot more memories together.</p>
+  <button class="btn" onclick="celebrate()">Celebrate! 🎉</button>
+ </div>
+</section>
+<footer>Made especially for you · with a little help from the stars, the campfire & Muffin</footer>
+
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<70;i++){
+ const s=document.createElement('i');s.className='star';
+ s.style.left=Math.random()*100+'%';s.style.top=Math.random()*78+'%';
+ s.style.animationDelay=(Math.random()*3)+'s';s.style.opacity=(.2+Math.random()*.8);
+ stars.appendChild(s);
+}
+function makeWish(){
+ document.getElementById('wish').textContent='✨ Whatever you wished for, I hope this year brings you closer to it. ✨';
+}
+function celebrate(){
+ const colors=['#e98b8b','#e9b85f','#7da58b','#7d9fd1','#c58acb','#f4d6a0'];
+ for(let i=0;i<90;i++){
+  const c=document.createElement('div');
+  c.className='confetti';
+  c.style.left=Math.random()*100+'vw';
+  c.style.background=colors[Math.floor(Math.random()*colors.length)];
+  c.style.animationDelay=(Math.random()*0.9)+'s';
+  c.style.animationDuration=(3.2+Math.random()*1.8)+'s';
+  c.style.transform='rotate('+Math.random()*360+'deg)';
+  document.body.appendChild(c);
+  setTimeout(()=>c.remove(),5500);
+ }
+ // Add a little birthday message at the same time
+ const msg=document.createElement('div');
+ msg.textContent='🎉 HAPPY BIRTHDAY! 🎉';
+ msg.style.cssText='position:fixed;left:50%;top:42%;transform:translate(-50%,-50%) scale(.8);z-index:100;font-family:Cormorant Garamond,serif;font-size:clamp(38px,8vw,80px);font-weight:700;color:#fff;text-shadow:0 3px 20px rgba(0,0,0,.35);pointer-events:none;opacity:0;transition:all .45s ease;white-space:nowrap';
+ document.body.appendChild(msg);
+ requestAnimationFrame(()=>{msg.style.opacity='1';msg.style.transform='translate(-50%,-50%) scale(1)'});
+ setTimeout(()=>{msg.style.opacity='0';msg.style.transform='translate(-50%,-50%) scale(1.08)'},1800);
+ setTimeout(()=>msg.remove(),2400);
+}
+</script>
+</body>
+</html>
